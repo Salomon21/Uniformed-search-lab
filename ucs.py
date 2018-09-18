@@ -56,9 +56,5 @@ if __name__== "__main__":
     current_state = lines[1]
     goal = lines[2]
     
-    print(max_height)
-    print(current_state)
-    print(goal)
-    
     #Call UCS method
-    #ucs(max_height, current_state, goal)
+    ucs(max_height, current_state, goal)
