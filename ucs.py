@@ -44,15 +44,13 @@ def  ucs(max_height, current_state, goal):
 if __name__== "__main__":
     
     #lines = ['3','(A); (B); (C); ()','(); (A); (B); (C)']
-    lines = ['1','(A); (B); ()','(A, B); (); ()']
+    #lines = ['1','(A); (B); ()','(A, B); (); ()']
     #lines = ['2','(A); (B); ()','(A, B); X; X']
-    #lines = []
+    lines = []
     
     #Parse lines of the input
-# =============================================================================
-#     for line in fileinput.input():
-#         lines.append(line)
-# =============================================================================
+    for line in fileinput.input():
+        lines.append(line)
     
     max_height = int(lines[0])
     current_state = lines[1]
