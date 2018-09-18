@@ -2,7 +2,6 @@
 import common_methods as common
 import heapq
 import itertools
-import fileinput
 
 def  ucs(max_height, current_state, goal):
     #parse the state and goal to a separate matrix
@@ -43,18 +42,25 @@ def  ucs(max_height, current_state, goal):
 
 if __name__== "__main__":
     
-    #lines = ['3','(A); (B); (C); ()','(); (A); (B); (C)']
-    #lines = ['1','(A); (B); ()','(A, B); (); ()']
-    #lines = ['2','(A); (B); ()','(A, B); X; X']
-    lines = []
+# =============================================================================
+#     #Local tests
+#     lines = ['3','(A); (B); (C); ()','(); (A); (B); (C)']
+#     lines = ['1','(A); (B); ()','(A, B); (); ()']
+#     lines = ['2','(A); (B); ()','(A, B); X; X']
+#     lines = []
+#     
+#     #Parse lines of the input
+#     for line in fileinput.input():
+#         lines.append(line)
+#     
+#     max_height = int(lines[0])
+#     current_state = lines[1]
+#     goal = lines[2]
+# =============================================================================
     
-    #Parse lines of the input
-    for line in fileinput.input():
-        lines.append(line)
-    
-    max_height = int(lines[0])
-    current_state = lines[1]
-    goal = lines[2]
+    max_height = int(input())
+    current_state = input()
+    goal = input()
     
     #Call UCS method
     ucs(max_height, current_state, goal)
