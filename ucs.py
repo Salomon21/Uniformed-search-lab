@@ -52,9 +52,10 @@ if __name__== "__main__":
     for line in fileinput.input():
         lines.append(line)
     
+    print(lines)
     max_height = int(lines[0])
     current_state = lines[1]
     goal = lines[2]
     
     #Call UCS method
-    ucs(max_height, current_state, goal)
+    #ucs(max_height, current_state, goal)
