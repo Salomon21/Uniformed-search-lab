@@ -85,18 +85,25 @@ def inconsistentAStar(max_height, current, goal):
 
 if __name__ == "__main__":
 
-    #lines = ['3','(A); (B); (C); ()','(); (A); (B); (C)']
-    #lines = ['1','(A); (B); ()','(A, B); (); ()']
-    #lines = ['2','(A); (B); ()','(A, B); X; X']
-    lines = []
+# =============================================================================
+#     #Local tests
+#     lines = ['3','(A); (B); (C); ()','(); (A); (B); (C)']
+#     lines = ['1','(A); (B); ()','(A, B); (); ()']
+#     lines = ['2','(A); (B); ()','(A, B); X; X']
+#     lines = []
+#
+#     #Parse lines of the input
+#     for line in fileinput.input():
+#         lines.append(line)
+#
+#     max_height = int(lines[0])
+#     current_state = lines[1]
+#     goal = lines[2]
+# =============================================================================
 
-    #Parse lines of the input
-    for line in fileinput.input():
-        lines.append(line)
-
-    max_height = int(lines[0])
-    current = lines[1]
-    goal = lines[2]
+    max_height = int(input())
+    current = input()
+    goal = input()
     random.seed(max_height)
 
     #Call A* method
