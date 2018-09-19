@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
 
+# =============================================================================
+# Juan Carlos Estebes González
+# Salomón Olivera Abud
+# =============================================================================
 import common_methods as common
 import heapq
 import itertools
